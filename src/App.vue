@@ -25,7 +25,7 @@ export default {
       kegiatanBaru: '',
       kegiatanList: [
         { nama: 'Sahur', selesai: true, tampil: true },
-        { nama: 'mengaji', selesai: false, tampil: true },
+        { nama: 'Mengaji', selesai: false, tampil: true },
         { nama: 'Sholat', selesai: false, tampil: true },
       ],
     };
