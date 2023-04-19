@@ -1,0 +1,85 @@
+body {
+	background-image: url('assets/Ramadhan.png'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 150vh;
+}
+
+.app {
+	max-width: 600px;
+	margin: 200px auto;
+	padding: 20px;
+}
+
+h1 {
+	font-family: lauren script;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #e5ff00;
+	font-size: 50px;
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	background-color: #f7fafc;
+	border-radius: 4px;
+	color: #333;
+	font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+	list-style-type: none;;
+	font-size: 125%;
+	margin-bottom: 1em;
+	position: relative;
+	display: flex; /* tambahkan kode ini */
+	align-items: center; /* tambahkan kode ini */
+}
+
+input[type="checkbox"] {
+	
+    margin-right: 10px; /* ubah margin menjadi 10px */
+	background-color: #00ffc3;
+}
+
+.mt-4 {
+	margin-top: 16px;
+}
+
+.p-6 {
+	padding: 24px;
+}
+
+span {
+	margin-right: 200px;
+	color: #e5ff00;
+	font-size: 30px;
+	border: solid #636363;
+ 	border-radius: 90px;
+	width: 6000px;
+	text-align: center;
+}
+
+button {
+	margin-right: 10px;
+	padding: 10px 16px;
+	background-color: #f47200;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #e460ff;
+}

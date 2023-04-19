@@ -1,0 +1,50 @@
+html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Kegiatan</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="p-6">
+      <h1>𝓐𝓰𝓮𝓷𝓭𝓪 𝓡𝓪𝓶𝓪𝓭𝓱𝓪𝓷</h1>
+      <div>
+        <input v-model="kegiatanBaru" @keyup.enter="tambahKegiatan" placeholder="Tambahkan kegiatan">
+        <button @click="tambahKegiatan">
+          Tambah
+        </button>
+      </div>
+      <ul>
+        
+        <li v-for="(kegiatan, index) in kegiatanList" :key="index">
+          <div>
+            <input type="checkbox" v-model="kegiatan.selesai">
+            <span :class="{ 'line-through': kegiatan.selesai }">{{ kegiatan.nama }}
+              <input type="checkbox" v-model="kegiatan.selesai" @change="ubahStatusKegiatan(index)">
+            </span>
+          </div>
+          <div>
+            <button @click="ubahStatusKegiatan(index)">
+              {{ kegiatan.selesai ? 'Belum Selesai' : 'Selesai' }}
+            </button>
+            <button @click="hapusKegiatan(index)">
+              Batal
+            </button> 
+          </div>
+        </li>
+      </ul>
+      <div class="mt-4">
+        <button @click="tampilkanBelumSelesai">
+          Filter Belum Selesai
+        </button>
+        <button @click="tampilkanSemua">
+          Tampilkan Semua
+        </button>
+      </div>
+    </div>
+  </div>
+</body> 
